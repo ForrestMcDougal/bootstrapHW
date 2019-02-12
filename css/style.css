@@ -1,0 +1,14 @@
+.navbar {
+	margin-bottom: 20px;
+	border-radius: 0;
+}
+
+footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: black;
+	color: gray;
+	text-align: center;
+}
