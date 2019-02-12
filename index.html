@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en-us">
+
 <head>
     <title>Bootstrap Visualizetion Dashboard</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
             integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     
-    <nav class="navbar navbar-inverse">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -36,7 +38,7 @@
                         </ul>
                     </li>
                     <li><a href="#">Comparison</a></li>
-                    <li><a href='data.html'>Data</a></li>
+                    <li><a href='html/data.html'>Data</a></li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
@@ -44,19 +46,34 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-8 col-sm-12 col-xs-12">
                 <h1>Summary</h1>
                 <hr>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur odio cupiditate quasi sit modi laudantium consequatur, voluptates harum ullam dolorum voluptatem, commodi minima. Obcaecati rerum culpa iste amet? Dolorum, vero. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae consequuntur nemo vitae eveniet? Reiciendis nesciunt dignissimos aperiam commodi obcaecati. Molestias minus ea suscipit voluptatum nisi voluptate! Repudiandae tempore aperiam corrupti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque porro laudantium facere aliquid adipisci inventore nihil reprehenderit voluptas. Fugiat rerum adipisci amet veniam corporis facere, velit quasi numquam officia quidem?</p>
+                <div class="pull-left" style="width: 50%; height: auto;">
+                    <img src="images/all_pitches_scatter.png" alt="scatter plot of pitch location data" class="img-responsive" />
+                </div>
+                <p style="text-align: justify">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur odio cupiditate quasi sit modi laudantium consequatur, voluptates harum ullam dolorum voluptatem, commodi minima. Obcaecati rerum culpa iste amet? Dolorum, vero. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae consequuntur nemo vitae eveniet? Reiciendis nesciunt dignissimos aperiam commodi obcaecati. Molestias minus ea suscipit voluptatum nisi voluptate! Repudiandae tempore aperiam corrupti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque porro laudantium facere aliquid adipisci inventore nihil reprehenderit voluptas. Fugiat rerum adipisci amet veniam corporis facere, velit quasi numquam officia quidem? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum incidunt recusandae deleniti sapiente dignissimos dicta, iste quisquam, officiis est ducimus fugit tempora laborum veritatis odit nemo quasi beatae, perferendis quod. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi, libero. Sit earum totam similique! Eius molestiae mollitia facere nisi facilis laboriosam et saepe eaque ratione? Quasi modi omnis dolores error? Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nostrum eum vitae voluptatibus? Et officia adipisci reiciendis aliquam ab quasi, a, eveniet vitae molestias voluptatum quaerat dolore ad error? Tempore.
+                </p>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-12 col-xs-12">
                 <h2>Visualizations</h2>
                 <hr>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita dolores ullam hic temporibus eius repellat accusantium doloremque, tempore ad! Rerum, libero optio eaque voluptatibus itaque cum. Aperiam quod sunt incidunt.</p>
+                <div class="row">
+                    <div class="pull-left" style="width: 50%; height: auto;">
+                        <img src="images/calls_pitch_speed.png" alt="calls by pitch speed" class="img-responsive">
+                    </div>
+                    <div class="pull-right" style="width: 50%; height: auto;">
+                        <img src="images/calls_pitch_type.png" alt="calls by pitch type" class="img-responsive">
+                    </div>
+                </div>
+
             </div>
         </div>
         
     </div>
+
+    <div style="margin-top: 50px"></div>
 
     <!-- Footer -->
     <footer class="page-footer">
@@ -75,4 +92,5 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
 </body>
+
 </html>

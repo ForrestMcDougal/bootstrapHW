@@ -1,3 +1,7 @@
+body {
+	padding-top: 70px;
+}
+
 .navbar {
 	margin-bottom: 20px;
 	border-radius: 0;
@@ -11,4 +15,5 @@ footer {
 	background-color: black;
 	color: gray;
 	text-align: center;
+	margin-top: 50px;
 }
