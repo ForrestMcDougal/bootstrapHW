@@ -17,3 +17,7 @@ footer {
 	text-align: center;
 	margin-top: 50px;
 }
+
+#selected-viz {
+	border: 3px solid green;
+}
