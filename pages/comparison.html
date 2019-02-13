@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>Bootstrap Visualizetion Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="../index.html">MLB Pitch Analysis</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false">Plots<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="visualizations/calls-pitch-speed.html">pitch speed</a></li>
+                            <li><a href="visualizations/calls-pitch-type.html">pitch type</a></li>
+                            <li><a href="visualizations/batter-hand.html">batter hand</a></li>
+                            <li><a href="visualizations/incorrect-calls.html">overall call accuracy</a></li>
+                            <li><a href="visualizations/home-away-calls.html">home/away calls</a></li>
+                            <li><a href="visualizations/favor-home-away.html">favor home or away</a></li>
+                            <li><a href="visualizations/pitch-location.html">pitch locations</a></li>
+                            <li><a href="visualizations/calls-umps.html">calls by ump</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active"><a href="#">ComparisonData<span class="sr-only">(current)</span></a></li>
+                    <li><a href="methodology.html">Methodology</a></li>
+                    <li><a href='data.html'>Data</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="container">
+        <h1>Jump to</h1>
+        <a href="#pitch-type">Pitch Type</a><br>
+        <a href="#pitch-type-batter">Pitch Type with Batter Hand</a><br>
+        <a href="#umpire-calls">Umpires</a>
+    </div>
+
+    <div class="container" id="pitch-type">
+        <h1>Pitch type scatter plots</h1>
+        <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <img src="../images/bootstrap/Fastball_scatter.png" class="img-responsive">
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <img src="../images/bootstrap/Curveball_scatter.png" class="img-responsive">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <img src="../images/bootstrap/Changeup_scatter.png" class="img-responsive">
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <img src="../images/bootstrap/Cutter_scatter.png" class="img-responsive">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <img src="../images/bootstrap/Sinker_scatter.png" class="img-responsive">
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <img src="../images/bootstrap/Slider_scatter.png" class="img-responsive">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <img src="../images/bootstrap/Splitter_scatter.png" class="img-responsive">
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="pitch-type-batter">
+        <h1>Pitch type scatter plots by batter hand</h1>
+        <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <img src="../images/bootstrap/Fastball_scatter_Right.png" class="img-responsive">
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <img src="../images/bootstrap/Fastball_scatter_Left.png" class="img-responsive">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <img src="../images/bootstrap/Curveball_scatter_Right.png" class="img-responsive">
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <img src="../images/bootstrap/Curveball_scatter_Left.png" class="img-responsive">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <img src="../images/bootstrap/Changeup_scatter_Right.png" class="img-responsive">
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <img src="../images/bootstrap/Changeup_scatter_Left.png" class="img-responsive">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <img src="../images/bootstrap/Cutter_scatter_Right.png" class="img-responsive">
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <img src="../images/bootstrap/Cutter_scatter_Left.png" class="img-responsive">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <img src="../images/bootstrap/Sinker_scatter_Right.png" class="img-responsive">
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <img src="../images/bootstrap/Sinker_scatter_Left.png" class="img-responsive">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <img src="../images/bootstrap/Slider_scatter_Right.png" class="img-responsive">
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <img src="../images/bootstrap/Slider_scatter_Left.png" class="img-responsive">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <img src="../images/bootstrap/Splitter_scatter_Right.png" class="img-responsive">
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <img src="../images/bootstrap/Splitter_scatter_Left.png" class="img-responsive">
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="umpire-calls">
+        <h1>Pitch scatter by umpire</h1>
+        <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <img src="../images/bootstrap/Adrian Johnson.png" class="img-responsive">
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <img src="../images/bootstrap/Alan Porter.png" class="img-responsive">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <img src="../images/bootstrap/Angel Hernandez.png" class="img-responsive">
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <img src="../images/bootstrap/Brian Gorman.png" class="img-responsive">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <img src="../images/bootstrap/Chad Fairchild.png" class="img-responsive">
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <img src="../images/bootstrap/Chris Conroy.png" class="img-responsive">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <img src="../images/bootstrap/Chris Guccione.png" class="img-responsive">
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <img src="../images/bootstrap/Cory Blaser.png" class="img-responsive">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <img src="../images/bootstrap/Dan Bellino.png" class="img-responsive">
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <img src="../images/bootstrap/Gary Cederstrom.png" class="img-responsive">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <img src="../images/bootstrap/Gerry Davis.png" class="img-responsive">
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <img src="../images/bootstrap/Greg Gibson.png" class="img-responsive">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <img src="../images/bootstrap/Hunter Wendelstedt.png" class="img-responsive">
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <img src="../images/bootstrap/James Hoye.png" class="img-responsive">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <img src="../images/bootstrap/Jeff Nelson.png" class="img-responsive">
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <img src="../images/bootstrap/Jerry Layne.png" class="img-responsive">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <img src="../images/bootstrap/Jim Wolf.png" class="img-responsive">
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <img src="../images/bootstrap/Joe West.png" class="img-responsive">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <img src="../images/bootstrap/Kerwin Danley.png" class="img-responsive">
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <img src="../images/bootstrap/Lance Barksdale.png" class="img-responsive">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <img src="../images/bootstrap/Mark Carlson.png" class="img-responsive">
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <img src="../images/bootstrap/Mike Muchlinski.png" class="img-responsive">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <img src="../images/bootstrap/Mike Winters.png" class="img-responsive">
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <img src="../images/bootstrap/Scott Barry.png" class="img-responsive">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <img src="../images/bootstrap/Ted Barrett.png" class="img-responsive">
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <img src="../images/bootstrap/Tim Timmons.png" class="img-responsive">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <img src="../images/bootstrap/Tom Hallion.png" class="img-responsive">
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <img src="../images/bootstrap/Vic Carapazza.png" class="img-responsive">
+            </div>
+        </div>
+    </div>
+        
+
+    <div style="margin-top: 50px"></div>
+
+    <!-- Footer -->
+    <footer class="page-footer">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2019 Copyright:
+            <a href="https://forrestmcdougal.github.io" style="color: gray"> Forrest McDougal</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>
