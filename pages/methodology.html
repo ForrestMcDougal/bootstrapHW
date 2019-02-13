@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>Bootstrap Visualizetion Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">MLB Pitch Analysis</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false">Plots<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Max Temperature</a></li>
+                            <li><a href="#">Humidity</a></li>
+                            <li><a href="#">Cloudiness</a></li>
+                            <li><a href="#">Wind Speed</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Comparison</a></li>
+                    <li class="active"><a href="#">Methodology<span class="sr-only">(current)</span></a></li>
+                    <li><a href='data.html'>Data</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="container">
+        <div class="col-md-8 col-sm-12 col-xs-12">
+            <h1>Methodology</h1>
+            <hr>
+            <div class="row">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In numquam laboriosam officiis harum beatae incidunt dignissimos, eligendi voluptatibus fugiat asperiores facere iste odio illo assumenda iusto ratione esse perferendis nam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, nemo. Eos tempore asperiores corporis id, maxime ad molestias, perspiciatis modi labore deserunt nam deleniti atque amet. Sequi voluptate dolorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio nemo repudiandae ex neque! Ullam, reiciendis quidem earum voluptatibus animi, ducimus tempora magni sapiente itaque minima beatae et maxime soluta nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad minus sint, in error repudiandae corporis! Dicta pariatur consequuntur consequatur! Quos a, repellendus natus atque ipsam modi cupiditate exercitationem officia pariatur.</p>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <h1>About the Data</h1>
+            <hr>
+            <div class="row">
+                <p>Data was obtained from the <a href="https://sportradar.us/" target="_blank">sportradar</a> MLB API.</p>
+                <ul>
+                    <li>33 Postseason Games (2018)</li>
+                    <li>28 Umpires</li>
+                    <li>4,688 pitches called</li>
+                </ul>
+            </div>
+            <div class="row">
+                <p>The data retrieved from the API was:</p>
+                <ul>
+                    <li>Umpire name</li>
+                    <li>Game ID</li>
+                    <li>Home/Away team at bat</li>
+                    <li>Called ball/strike</li>
+                    <li>Pitch X location</li>
+                    <li>Pitch Y location</li>
+                    <li>Pitcher hand</li>
+                    <li>Batter hand</li>
+                    <li>Pitch type</li>
+                    <li>Pitch speed</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div style="margin-top: 50px"></div>
+    
+    <!-- Footer -->
+    <footer class="page-footer">
+    
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2019 Copyright:
+            <a href="https://forrestmcdougal.github.io" style="color: gray"> Forrest McDougal</a>
+        </div>
+        <!-- Copyright -->
+    
+    </footer>
+    <!-- Footer -->
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    </body>
+    
+    </html>
