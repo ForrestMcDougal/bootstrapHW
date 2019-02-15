@@ -50,26 +50,36 @@
     </nav>
 
     <div class="container">
-        <div class="col-md-8 col-sm-12 col-xs-12">
-            <h1>Methodology</h1>
-            <hr>
-            <div class="row">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In numquam laboriosam officiis harum beatae incidunt dignissimos, eligendi voluptatibus fugiat asperiores facere iste odio illo assumenda iusto ratione esse perferendis nam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, nemo. Eos tempore asperiores corporis id, maxime ad molestias, perspiciatis modi labore deserunt nam deleniti atque amet. Sequi voluptate dolorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio nemo repudiandae ex neque! Ullam, reiciendis quidem earum voluptatibus animi, ducimus tempora magni sapiente itaque minima beatae et maxime soluta nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad minus sint, in error repudiandae corporis! Dicta pariatur consequuntur consequatur! Quos a, repellendus natus atque ipsam modi cupiditate exercitationem officia pariatur.</p>
+        <div class="row">
+            <div class="col-md-8 col-sm-12 col-xs-12">
+                <h1>Methodology</h1>
+                <hr>
+                <p>There are three overall questions that we wanted to anwer in this study:</p>
+                <ol>
+                    <li>How accurate are umpires overall?</li>
+                    <li>Do players influence the accuracy of the umpires?</li>
+                    <li>Are there environmental influences on the umpires accuracy?</li>
+                </ol>
+                <p>In order to answer these questions, data was obtained from the <a href="https://sportradar.us/" target="_blank">sportradar</a> MLB API. First, the schedule for the 2018 MLB postseason was pulled down. For the games that were played (not all game IDs actually corresponed to a played game), the umpire's name was obtained from the game summary endpoint. The pitch data was then pulled for that same game for all pitches that were called a ball or strike by the umpire. The data was written to a csv file that could then be manipulated using pandas.</p>
+                <h2>How accurate are the umpires overall?</h2>
+                <p>This section was fairly straightforward. Using the location data and the call, statistics for each umpire and each pitch type could be calculated using pandas functionality. Accuracy (if the umpire called the theoretical call) was done by comparing the call to the location by adding a column to the DataFrame of theoretical calls and checking if the actual call and theoretical call were equivalent.</p>
+                <h2>Do players influence the accuracy of the umpires?</h2>
+                <p>This section had a similar process as the first, where there was more emphasis on pitch type and speed using pandas filtering and cutting to create smaller datasets.</p>
+                <h2>Are there environmental influences on the umpires accuracy?</h2>
+                <p>By environmental influences, we meant what the umpire was seeing (left vs right handed batter or home vs away at bat). This section had the biggest assumption that all missed calls benefited the pitching team because the overwhelming majority of missed calls were called a strike. In future work, we want to refine this to take into account balls vs strikes to improve the analysis.</p>
             </div>
-        </div>
-        <div class="col-md-4 col-sm-12 col-xs-12">
-            <h1>About the Data</h1>
-            <hr>
-            <div class="row">
-                <p>Data was obtained from the <a href="https://sportradar.us/" target="_blank">sportradar</a> MLB API.</p>
+            
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <h1>About the Data</h1>
+                <hr>
+                <h3>Data was obtained from the <a href="https://sportradar.us/" target="_blank">sportradar</a> MLB API.</h3>
                 <ul>
                     <li>33 Postseason Games (2018)</li>
                     <li>28 Umpires</li>
                     <li>4,688 pitches called</li>
                 </ul>
-            </div>
-            <div class="row">
-                <p>The data retrieved from the API was:</p>
+                <br>
+                <h3>The data retrieved from the API was:</h3>
                 <ul>
                     <li>Umpire name</li>
                     <li>Game ID</li>
@@ -81,6 +91,15 @@
                     <li>Batter hand</li>
                     <li>Pitch type</li>
                     <li>Pitch speed</li>
+                </ul>
+                <br>
+                <h3>Technology used</h3>
+                <ul>
+                    <li>Python 3</li>
+                    <li>Numpy</li>
+                    <li>Pandas</li>
+                    <li>Matplotlib</li>
+                    <li>Requests</li>
                 </ul>
             </div>
         </div>
