@@ -19,5 +19,33 @@ footer {
 }
 
 #selected-viz {
-	border: 3px solid green;
+	border: 3px solid black;
+}
+
+#footer-name {
+	color: gray;
+}
+
+@media (max-width: 767px) {
+	div.navbar-header {
+		background-color: gray;
+		color: black;
+	}
+
+	div.footer-copyright {
+		background-color: gray;
+		color: black;
+	}
+
+	a.navbar-brand {
+		color: black;
+	}
+
+	.navbar-inverse .navbar-brand {
+		color: black;
+	}
+
+	#footer-name {
+		color: black;
+	}
 }
